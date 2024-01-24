@@ -2,7 +2,7 @@
 /*
 Oyun:
     kural1: kart sayısında değişiklik olmaz.(52)
-    kural2: oyuncu sayısı, 48'i kalansız bölebilmeli.
+    kural2: oyuncu sayısı, 12'yi kalansız bölebilmeli.
     kural3: saat yönünün tersine göre ilk başlayan kişi sırası her oyun yeniden başladığında değişir.
     kural4: oyuna ilk başlanıldığında ilk 3 kart kapalı şekilde ortaya konulmalı ve bir tane de açık konulmalı.
     kural5: her oyuncuya sadece 4 kart verilir
