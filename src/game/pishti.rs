@@ -1,21 +1,3 @@
-
-/*
-Oyun:
-    kural1: kart sayısında değişiklik olmaz.(52)
-    kural2: oyuncu sayısı, 48'i kalansız bölebilmeli.
-    kural3: saat yönünün tersine göre ilk başlayan kişi sırası her oyun yeniden başladığında değişir.
-    kural4: oyuna ilk başlanıldığında ilk 3 kart kapalı şekilde ortaya konulmalı ve bir tane de açık konulmalı.
-    kural5: her oyuncuya sadece 4 kart verilir
-    kural6: sırayla oyuna başlanır ve en son koyulan karttaki sembol ile uyuşan bir kart atılırsa
-        eğer altında uyuşan kart dışında başka kart yok ise pişti olur ve karta göre puan alır
-        eğer altında uyuşan kart dışında kart var ise oradaki bütün kartları alır
-    kural7: joker, as, sinek 2 ve karo 10 puanlı kartlardır.
-    kural8: kart çokluğu 3 puandır
-    kural9: joker ve as 1 puandır, sinek 2, 2 puan ve karo 10, 3 puandır.
-    kural10: 48 kartın hepsi bitene kadar oyuna devam edilir.
-    kural11: oyun sonunda toplanan kart ve piştilerle puan hesaplanır ve kazanan belirlenir
- */
-
 use std::collections::HashMap;
 
 use crate::element::card::{Card, CardType, Color, DataContainer, Symbol, Tag};
@@ -155,15 +137,6 @@ impl PishtiGame {
         }
     }
 }
-
-/* Handler şöyle olmalı
-
-Sırayla atılan kartları ve olayları görmeli
-Sonra sıra ona geldiğinde Diğerlerin topladığı kartlara bakarak ve neler atıldığına bakmalı
-Sonra kendi topladığı kartlara bakabilmeli
-Ondan Sonra da kartını seçip atabilmeli
-
-*/
 
 impl Game for PishtiGame {
     fn handle(&self, player: Player) {

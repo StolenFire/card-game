@@ -4,7 +4,7 @@ mod game;
 
 use crate::element::card::{Card, CardType, Color, DataContainer, Symbol, Tag};
 use crate::element::player::Player;
-use crate::game::pishti::{PishtiGame};
+use crate::game::pishti::PishtiGame;
 use crate::game::Game;
 
 fn main() {
